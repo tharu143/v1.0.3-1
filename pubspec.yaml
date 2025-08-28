@@ -1,0 +1,69 @@
+name: kepler_tech_app
+description: "A new Flutter project."
+
+publish_to: 'none' # Ensures your package is not accidentally published to pub.dev
+
+version: 1.0.2+2  # Added a default version number for your app.
+                # The '1.0.0' is the version name, and '1' is the build number.
+                # Increment the build number for each new release.
+
+environment:
+  sdk: '>=3.8.1 <4.0.0' # Adjusted SDK constraint for clarity and forward compatibility
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # Moved from dev_dependencies to dependencies
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  upgrader: ^11.4.0
+  font_awesome_flutter: ^10.5.0
+  shared_preferences: ^2.5.2
+  file_picker: ^10.1.9 
+  geolocator: ^9.0.2
+  intl: ^0.20.2
+  permission_handler: ^11.3.1
+  open_file: ^3.5.10
+  image_picker: ^1.1.2
+  path_provider: ^2.1.5
+  signature: ^5.5.0
+  flutter_datetime_picker_plus: ^2.2.0
+  dropdown_search: ^6.0.2 
+  printing: ^5.12.0
+  pdf: ^3.10.1
+  flutter_dotenv: ^5.1.0
+  url_launcher: ^6.3.0
+  geocoding: ^3.0.0
+  flutter_html: ^3.0.0
+  package_info_plus: ^8.0.0
+  http: ^1.2.1
+  add_2_calendar: ^3.0.1
+  flutter_local_notifications: ^19.3.0
+  timezone: ^0.10.1
+  flutter_timezone: ^4.1.1
+  flutter_pdfview: ^1.2.7
+  cached_network_image: ^3.4.1
+  fl_chart: ^0.68.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # Fonts
+  fonts:
+    - family: Dubai
+      fonts:
+        - asset: assets/fonts/Dubai-Regular.woff
+        - asset: assets/fonts/Dubai-Medium.woff
+          weight: 500
+        - asset: assets/fonts/Dubai-Bold.woff
+          weight: 700
+  
+  # Ensure the asset section is properly defined
+  assets:
+    - .env
+    - assets/images/logo.png # Ensure this path is correct and the image file exists
